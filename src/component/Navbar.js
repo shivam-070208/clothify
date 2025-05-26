@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div className='w-screen flex justify-between'>
-        <div className='texter'>Clothify</div>
+        <div className='fixed z-20'>Clothify</div>
       
     </div>
   )
