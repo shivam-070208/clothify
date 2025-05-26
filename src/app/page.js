@@ -18,7 +18,7 @@ const page = () => {
 
   return (
     <div>
-      <div data-scroll data-scroll-speed='0.04' className='w-screen fixed opacity-[0.9] h-screen z-[-1]'>
+      <div data-scroll data-scroll-speed='0.04' className='w-screen fixed  h-screen z-[-1]'>
         <Intro />
       </div>
       <div className='w-[98vw] ml-[0.5vw] absolute top-[100%] h-screen bg-white rounded-t-xl pointer-events-none'> </div>
