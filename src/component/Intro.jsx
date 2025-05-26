@@ -2,16 +2,17 @@
 import React, { useEffect, useRef } from 'react';
 import Cherryglsl from 'cheryglsljs';
 
+
 const Intro = () => {
    const assets = Cherryglsl
     const containerref = useRef(null)
     useEffect(()=>{
         assets.ImageTransition1(containerref.current,{
   
-    radius:0.09,
+    radius:0.06,
     speed:0.03,
     strength:0.3,hover:false,
-    noise:4,p:-0.4
+    noise:4,p:-0.8
 });
       
     },[])
