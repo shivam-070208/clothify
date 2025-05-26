@@ -12,7 +12,7 @@ const Intro = () => {
     radius:0.06,
     speed:0.03,
     strength:0.3,hover:false,
-    noise:4,p:-0.8
+    noise:4,p:-1.0
 });
       
     },[])
