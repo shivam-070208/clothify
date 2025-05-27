@@ -5,6 +5,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import Introhomepage from '@/component/Introhomepage';
 import *as Cherryglsl  from 'cheryglsljs';
+import Whytochooseus from '@/component/Whytochooseus';
 const page = () => {
 
   useEffect(() => {
@@ -24,6 +25,7 @@ const page = () => {
       </div>
       <div className='w-[98vw] ml-[0.5vw] absolute top-[100%] bottom-0 min-h-screen bg-white rounded-t-xl '>
         <Introhomepage Cherryglsl={Cherryglsl} />
+        
       </div>
 
     </div>
