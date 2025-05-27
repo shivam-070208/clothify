@@ -34,7 +34,7 @@ const Navbar = () => {
     spanschar1.forEach((span, i) => {
       gsap.to(span, {
         position: 'relative',
-        delay: i * 0.1,
+        delay: i * 0.09,
         bottom: '100%',
         ease: 'power2.out',
         stagger: 0.8
@@ -44,7 +44,7 @@ const Navbar = () => {
     spanschar2.forEach((span, i) => {
       gsap.to(span, {
          position:"relative",
-        delay: i * 0.1,
+        delay: i * 0.09,
         bottom: 'max(1.3vw,13px)',
         ease: 'power2.out',
       });
@@ -58,7 +58,7 @@ const Navbar = () => {
     const span2 = item.children[1];
     spanschar1.forEach((span, i) => {
       gsap.to(span, {
-        delay: i * 0.1,
+        delay: i * 0.09,
         bottom: '0%',
         ease: 'power2.out',
         stagger: 0.8
@@ -67,11 +67,10 @@ const Navbar = () => {
     const spanschar2 = span2.querySelectorAll('.spannedchar');
     spanschar2.forEach((span, i) => {
       gsap.to(span, {
-        delay: i * 0.1,
+        delay: i * 0.09,
         position:"relative",
         bottom: '0px',
-        ease: 'power2.out',
-        stagger: 0.8
+        ease: 'power2.out'
       });
     });
   };
