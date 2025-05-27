@@ -67,7 +67,7 @@ const Introhomepage = ({ Cherryglsl }) => {
     // Cleanup event listeners on unmount
   }, []);
   useEffect(() => {
-    console.log(Cherryglsl);
+ 
     if (typeof Cherryglsl !== "undefined" && containerRef.current) {
       Cherryglsl.ImageTransition2(containerRef.current, {
         time: true,
