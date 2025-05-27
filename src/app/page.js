@@ -23,9 +23,9 @@ const page = () => {
       <div data-scroll data-scroll-speed='0.004' className='w-screen fixed  h-screen z-[-1]'>
         <Intro Cherryglsl={Cherryglsl} />
       </div>
-      <div className='w-[98vw] ml-[0.5vw] absolute top-[100%] bottom-0 min-h-screen bg-white rounded-t-xl '>
+      <div className='w-[98vw] ml-[0.5vw] absolute top-[100%] bg-white  rounded-t-xl '>
         <Introhomepage Cherryglsl={Cherryglsl} />
-        
+        <Whytochooseus />
       </div>
 
     </div>
