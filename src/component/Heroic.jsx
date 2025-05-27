@@ -9,7 +9,7 @@ const Intro = ({Cherryglsl}) => {
     useEffect(()=>{
         assets.ImageTransition1(containerref.current,{
   
-    radius:0.06,
+    radius:window.matchMedia('(any-hover: hover)').matches?0.06:0,
     speed:0.03,
     strength:0.3,hover:false,
     noise:4,p:-1.3
