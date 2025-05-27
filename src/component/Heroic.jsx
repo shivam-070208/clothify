@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
-import Cherryglsl from 'cheryglsljs';
+import *as Cherryglsl  from 'cheryglsljs';
 
 
 const Intro = () => {
@@ -14,6 +14,7 @@ const Intro = () => {
     strength:0.3,hover:false,
     noise:4,p:-1.0
 });
+
       
     },[])
   return (
