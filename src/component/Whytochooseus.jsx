@@ -41,7 +41,7 @@ const Whytochooseus = () => {
           speed: 0.13,
           strength: 0.05,
           hover: window.matchMedia('(any-hover: hover)').matches,
-          p:-6
+          p:-5.8
           
         });
       }
