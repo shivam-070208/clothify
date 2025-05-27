@@ -49,7 +49,7 @@ const Whytochooseus = () => {
   },[containerRef]);
   return (
     <div className="w-full py-10 px-4 bg-white">
-      <h2 className="text-[max(4vw,30px)] font-bold text-center mb-8">Why Choose Clothify?</h2>
+      <h2 className="text-[max(4vw,30px)] font-bold text-center mb-8 uppercase">Why Choose Clothify?</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {features.map((feature, idx) => (
           <div 
