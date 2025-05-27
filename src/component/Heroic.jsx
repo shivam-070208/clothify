@@ -1,9 +1,9 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
-import *as Cherryglsl  from 'cheryglsljs';
 
 
-const Intro = () => {
+
+const Intro = ({Cherryglsl}) => {
    const assets = Cherryglsl
     const containerref = useRef(null)
     useEffect(()=>{

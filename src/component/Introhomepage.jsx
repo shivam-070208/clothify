@@ -1,6 +1,19 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 
-const Introhomepage = () => {
+const Introhomepage = ({Cherryglsl}) => {
+  const containerRef = React.useRef(null);
+  useEffect(() => {
+    console.log(Cherryglsl);
+    if (typeof Cherryglsl !== 'undefined' && containerRef.current) {
+      Cherryglsl.ImageTransition2(containerRef.current, {
+      time:true,
+      speed:2,
+        x:-1,
+        y:-1
+      });
+    }
+  },[])
   return (
     <div className='w-full max-[680px]:columns-1 columns-2 bg-blue-600 rounded-t-xl'>
       <div className=' w-full  pt-10  flex flex-col pl-9 pr-0  rounded-l-xl '>
@@ -10,7 +23,11 @@ const Introhomepage = () => {
        <button className='mt-10 bg-white  text-blue-600 px-5 py-2 rounded-full font-bold text-[max(1.2vw,14px)]'>Shop Now</button>
        </span>
       </div>
-      <div className=' w-full rounded-r-xl min-h-[60vh] grid place-items-center'>Column 2</div>
+      <div className=' w-full rounded-r-xl h-[90vh] pt-2 pl-2 pr-2 pb-2'>
+        <div className='w-full h-full' ref={containerRef}>
+          <img src="introhomepage/i1.png" alt="" /><img src="introhomepage/i2.png" alt="" /><img src="introhomepage/i3.png" alt="" />
+        </div>
+      </div>
     </div>
   )
 }

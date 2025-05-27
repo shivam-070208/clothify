@@ -4,7 +4,7 @@ import React from 'react'
  import LocomotiveScroll from 'locomotive-scroll';
 import { useEffect } from 'react';
 import Introhomepage from '@/component/Introhomepage';
-
+import *as Cherryglsl  from 'cheryglsljs';
 const page = () => {
 
   useEffect(() => {
@@ -20,10 +20,10 @@ const page = () => {
   return (
     <div>
       <div data-scroll data-scroll-speed='0.004' className='w-screen fixed  h-screen z-[-1]'>
-        <Intro />
+        <Intro Cherryglsl={Cherryglsl} />
       </div>
       <div className='w-[98vw] ml-[0.5vw] absolute top-[100%] min-h-screen bg-white rounded-t-xl '>
-        <Introhomepage />
+        <Introhomepage Cherryglsl={Cherryglsl} />
       </div>
 
     </div>
