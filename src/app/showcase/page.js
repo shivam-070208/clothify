@@ -13,10 +13,10 @@ const page = () => {
     })
 
   return (
-    <div className=' h-screen  md:columns-2 columns-1 pt-14' >
+    <div className=' h-screen  md:columns-2 columns-1 gap-[3px] pt-14 mr-2' >
 
       <Modeimport i={i} />
-      <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 w-full md:max-h-full h-[50vh] md:h-full overflow-y-scroll '>
+      <div className='grid sm:grid-cols-2 grid-cols-1 gap-2 w-full md:max-h-full h-[50vh] md:h-full overflow-y-scroll '>
         {SellData.map((item,i)=>(
           <div key={i} >
           <Card prop={item} />
