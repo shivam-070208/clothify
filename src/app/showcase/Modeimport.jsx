@@ -14,7 +14,7 @@ const Modeimport = ({ i }) => {
   }, [i]);
 
   return (
-    <div className='w-full h-[50vh] md:h-screen' id='containerlo' ref={containerRef}>
+    <div className='w-full h-[50vh] lg:h-[calc(99vh-56px)]' id='containerlo' ref={containerRef}>
     
     </div>
   );
