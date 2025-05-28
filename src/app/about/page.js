@@ -2,11 +2,11 @@ import React from 'react';
 
 const page = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800 ">
   
 
       {/* Main Content */}
-      <main className="flex-grow">
+      <main className=" mt-6">
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Image Section */}
@@ -34,8 +34,8 @@ const page = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white shadow">
+     
+      <footer className="bg-white shadow absolute bottom-0 w-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500">
           © {new Date().getFullYear()} YourBrand. All rights reserved.
         </div>
