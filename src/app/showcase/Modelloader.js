@@ -48,6 +48,7 @@ scene.add(directionalLight);
 
   // Load the GLB model
     const loader = new GLTFLoader();
+    let box;
   loader.load(
     modelPath,
     function (gltf) {
@@ -55,10 +56,10 @@ scene.add(directionalLight);
       scene.add(model);
 
       // Compute the bounding box to center the model
-      const box = new THREE.Box3().setFromObject(model);
-      const center = box.getCenter(new THREE.Vector3());
-      model.position.sub(center); // Center the model
-
+      box = new THREE.Box3().setFromObject(model);
+      const center = box.getCenter(new THREE.Vector3(0,2,3));
+      model.position.sub(center); 
+      
       // Adjust camera to fit the model
       const size = box.getSize(new THREE.Vector3()).length();
       const distance = size * 1.0;
@@ -75,6 +76,9 @@ scene.add(directionalLight);
   window.addEventListener('resize', () => {
     camera.aspect = container.clientWidth / container.clientHeight;
     camera.updateProjectionMatrix();
+    if(box){
+      
+    }
     renderer.setSize(container.clientWidth, container.clientHeight);
   });
 
