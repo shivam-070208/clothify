@@ -1,10 +1,12 @@
 import React from "react";
 
-const Card = ({ prop }) => {
+const Card = ({ prop,si }) => {
   return (
     <div className="w-full h-full relative bg-[#ebebebcb] rounded-xl shadow-black shadow-2 mb-9">
       <div className="w-full h-1/2">
-        <img
+        <img onClick={()=>{
+            si(prop.Path)
+        }}
           src={prop.img}
           className="w-full rounded-t-xl h-full"
           alt="rahul"
