@@ -14,7 +14,7 @@ const Card = ({ prop }) => {
         <h1 className="w-full p-3 bg-blue-600 text-white font-extrabold uppercase font-sans">
           {prop.Tittle}
         </h1>
-        <p className="line-clamp-4 p-3">{prop.Content}</p>
+        <p className="line-clamp-4 p-3 font-bold font- leading-4">{prop.Content}</p>
         <div className="w-full flex justify-between p-2 gap-3 bg-blue-600 rounded-b-xl text-white ">
           <span className="font-bold font-sans">{prop.price}%</span>
           <button className="bg-white text-blue-600 rounded-full px-2 font-bold font-sans cursor-pointer">
