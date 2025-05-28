@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-// import { useGSAP } from '@gsap/react';
+import Link from 'next/link';
+
 
 const Navbar = () => {
   const spanRefs = useRef([]);
@@ -80,7 +81,7 @@ const Navbar = () => {
       <div className='text-[max(1.8vw,17px)] font-bold text-white font-stretch-50% font-serif uppercase'>Clothify</div>
     <div className='flex gap-4 max-[450px]:hidden'>
    {["Home","About","ShowCase","Contact"].map((item, index) => (
-        <div key={index} className='flex items-center'>
+        <Link href={item =="Home"?'/':`/${item.toLowerCase()}`}  key={index} className='flex items-center'>
           <div
             onMouseEnter={onMouseEnter}
             ref={el => { if (el) containerRef.current[index + 1] = el; }}
@@ -90,7 +91,7 @@ const Navbar = () => {
             <span ref={el => { if (el) spanRefs.current[index * 2] = el; }} className='font-bold'>{item}</span>
             <span ref={el => { if (el) spanRefs.current[index * 2 + 1] = el; }} className='absolute top-[max(1.2vw,12px)] font-bold left-0'>{item}</span>
           </div>
-        </div>
+        </Link>
       ))}
      </div>
     </div>
