@@ -102,7 +102,7 @@ const Introhomepage = ({ Cherryglsl }) => {
       </div>
       <div
         ref={(el) => maincontainerRef.current.push(el)}
-        className=" w-full rounded-r-xl h-[80vh] pt-2 pl-2 pr-2 pb-2"
+        className=" w-full rounded-r-xl h-[80vh] pt-2 pl-2 pr-4 pb-2"
       >
         <div className="w-full h-full relative" ref={containerRef}>
           <img
