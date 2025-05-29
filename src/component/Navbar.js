@@ -80,7 +80,7 @@ const Navbar = () => {
     <div className='w-screen z-[100] fixed bg-[#11111198]  p-2 pr-5 pt-4 flex justify-between'>
       <div className='text-[max(1.8vw,17px)] font-bold text-white font-stretch-50% font-serif uppercase'>Clothify</div>
     <div className='flex gap-4 max-[450px]:hidden'>
-   {["Home","About","ShowCase","Contact"].map((item, index) => (
+   {["Home","About","ShowCase","feedback"].map((item, index) => (
         <Link href={item =="Home"?'/':`/${item.toLowerCase()}`}  key={index} className='flex items-center'>
           <div
             onMouseEnter={onMouseEnter}
